@@ -1,0 +1,14 @@
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\bin\Debug\net8.0\GestionEmpleados.exe
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\bin\Debug\net8.0\GestionEmpleados.deps.json
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\bin\Debug\net8.0\GestionEmpleados.runtimeconfig.json
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\bin\Debug\net8.0\GestionEmpleados.dll
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\bin\Debug\net8.0\GestionEmpleados.pdb
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.AssemblyInfoInputs.cache
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.AssemblyInfo.cs
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.csproj.CoreCompileInputs.cache
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.dll
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\refint\GestionEmpleados.dll
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.pdb
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.genruntimeconfig.cache
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\ref\GestionEmpleados.dll
