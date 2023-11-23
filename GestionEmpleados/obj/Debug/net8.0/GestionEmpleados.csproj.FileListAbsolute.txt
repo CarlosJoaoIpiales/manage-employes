@@ -12,3 +12,4 @@ C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado
 C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.pdb
 C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.genruntimeconfig.cache
 C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\ref\GestionEmpleados.dll
+C:\Users\Shadow Moon\OneDrive\Escritorio\Universidad\Quito Semestre\Web Avanzado\Primer Parcial\manage-employes\GestionEmpleados\GestionEmpleados\obj\Debug\net8.0\GestionEmpleados.sourcelink.json
