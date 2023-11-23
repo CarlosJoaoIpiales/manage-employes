@@ -1,6 +1,7 @@
 ﻿using System;
 // Libreria para usar las listas
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 // Definición de la interfaz
 public interface IMostrarInformacion
@@ -55,6 +56,53 @@ public class Gerente : Empleado, IMostrarInformacion
     }
 }
 
+// Definicion para el control de entradas de nummeros
+public class Controladores
+{
+    public double NumerosDecimales( string text)
+    {
+        bool justNumber;
+        double number;
+        do
+        {
+            Console.Write(text);
+            // Comprobamos si el salario ingresado es un numero ya sea entero o decimal
+            justNumber = double.TryParse(Console.ReadLine(), out number);
+
+            if (!justNumber)
+            {
+                Console.WriteLine("Error: Por favor, ingrese un valor entero para el salario.");
+            }
+
+        } while (!justNumber);
+        return number;
+    }
+
+    public int NumeroEntero ( string text)
+    {
+        int number = 0;
+        bool esNumero;
+        do
+        {
+            Console.Write(text);
+            esNumero = int.TryParse(Console.ReadLine(), out number);
+
+            if (!esNumero)
+            {
+                Console.WriteLine("Error: Por favor, ingrese una opcion valida....");
+
+                // Esperamos a que el usuario presione una tecla
+                Console.ReadKey();
+
+                // Borrar la consola
+                Console.Clear();
+            }
+
+        } while (!esNumero);
+        return number;
+    }
+}
+
 class Program
 {
     static void Main()
@@ -65,31 +113,23 @@ class Program
         // Declaramos un array dinamico para tener una lista de empleados
         List<Empleado> listaEmpleados = new List<Empleado>();
 
+        // Declaramos un array dinamico para tener una lista de gerente
+        List<Gerente> listaGerentes = new List<Gerente>();
+
+        // Instanciamos el controlador para comprobar numeros decimales
+        Controladores controlador = new Controladores();
+
 
         do
         {
-            bool esNumero;
             Console.WriteLine("********Bienvenidos al sistema de gestion de empleados");
             Console.WriteLine("1.- Agregar Empleado");
-            Console.WriteLine("2.- Mostrar Empleados");
-            Console.WriteLine("3.- Salir");
-            do
-            {
-                Console.Write("Ingrese la opcion que desea: ");
-                esNumero = int.TryParse(Console.ReadLine(), out opcion);
-
-                if (!esNumero)
-                {
-                    Console.WriteLine("Error: Por favor, ingrese una opcion valida....");
-
-                    // Esperamos a que el usuario presione una tecla
-                    Console.ReadKey();
-
-                    // Borrar la consola
-                    Console.Clear();
-                }
-
-            } while (!esNumero);
+            Console.WriteLine("2.- Agregar Gerente");
+            Console.WriteLine("3.- Mostrar Empleados");
+            Console.WriteLine("4.- Mostrar Gerentes");
+            Console.WriteLine("5.- Salir");
+            // Nos aseguramos de que sea un numero entero
+            opcion = controlador.NumeroEntero("Ingrese la opcion que desea: ");
             // Borrar la consola
             Console.Clear();
             switch (opcion)
@@ -99,22 +139,10 @@ class Program
                     Console.WriteLine("Ingrese el nombre del nuevo empleado: ");
                     string nombre = Console.ReadLine();
 
-                    double salario;
-                    bool justNumber;
-
-                    do
-                    {
-                        Console.Write("Ingrese el salario del empleado: ");
-                        // Comprobamos si el salario ingresado es un numero ya sea entero o decimal
-                        justNumber = double.TryParse(Console.ReadLine(), out salario);
-
-                        if (!justNumber)
-                        {
-                            Console.WriteLine("Error: Por favor, ingrese un valor entero para el salario.");
-                        }
-
-                    } while (!justNumber);
-
+                    // Comprobamos si el salario es un numero entero o decimal
+                    double salario = controlador.NumerosDecimales("Ingrese el salario del empleado: ");
+                    
+                    // Instanciamos un nuevo empleado y lo agregamos a la lista
                     Empleado nuevoEmpleado = new Empleado(nombre, salario);
                     listaEmpleados.Add(nuevoEmpleado);
 
@@ -126,6 +154,28 @@ class Program
                     Console.Clear();
                     break;
                 case 2:
+                    Console.WriteLine("**********Ingreso de nuevo Gerente**************");
+                    Console.WriteLine("Ingrese el nombre del nuevo gerente: ");
+                    nombre = Console.ReadLine();
+
+                    Console.WriteLine("Ingrese el departamento del gerente: ");
+                    string departamento = Console.ReadLine();
+
+                    // Comprobamos si el salario es un numero entero o decimal
+                    salario = controlador.NumerosDecimales("Ingrese el salario del gerente: ");
+
+                    // Instanciamos un nuevo empleado y lo agregamos a la lista
+                    Gerente nuevoGerente = new Gerente(nombre, salario, departamento);
+                    listaEmpleados.Add(nuevoGerente);
+
+                    Console.WriteLine($"Gerente agregado: Nombre: {nuevoGerente.Nombre}, Salario: {nuevoGerente.Salario}, Departamento: {nuevoGerente.Departamento}");
+                    Console.WriteLine("Pulse cualquier tecla para regresar al menu principal");
+                    // Esperamos a que el usuario presione una tecla
+                    Console.ReadKey();
+                    // Borrar la consola
+                    Console.Clear();
+                    break;
+                case 3:
                     // Mostrar lista de empleados
                     Console.WriteLine("**************** Lista de empleados ******************");
                     int flag = 1;
@@ -140,7 +190,22 @@ class Program
                     // Borrar la consola
                     Console.Clear();
                     break;
-                case 3:
+                case 4:
+                    // Mostrar lista de empleados
+                    Console.WriteLine("**************** Lista de gerentes ******************");
+                    flag = 1;
+                    foreach (IMostrarInformacion gerente in listaGerentes)
+                    {
+                        Console.Write($"{flag++}.- ");
+                        gerente.MostrarInformacion();
+                    }
+                    Console.WriteLine("Pulse cualquier tecla para regresar al menu principal");
+                    // Esperamos a que el usuario presione una tecla
+                    Console.ReadKey();
+                    // Borrar la consola
+                    Console.Clear();
+                    break;
+                case 5:
                     Console.WriteLine("Gracias por preferirnos :)");
                     Console.WriteLine("Pulse cualquier tecla para salir");
                     // Esperamos a que el usuario presione una tecla
@@ -153,7 +218,7 @@ class Program
                     Console.ReadKey();
                     break;
             }
-        } while (opcion != 3);
+        } while (opcion != 5);
 
     }
 }
