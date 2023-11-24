@@ -1,0 +1,51 @@
+
+****************** Sistema de Gestion de empleados en C# *****************************
+
+
+Este repositorio contiene un programa simple en C# para gestionar empleados y gerentes. A continuación, se proporcionan instrucciones sobre cómo descargar, compilar y ejecutar el código en Visual Studio 2022.
+
+Descargar el código desde GitHub
+
+-Abre tu navegador web y visita la página del repositorio en GitHub: https://github.com/CarlosJoaoIpiales/manage-employes/tree/main
+
+-Haz clic en el botón verde "Code" y selecciona "Download ZIP" para descargar el código fuente como un archivo ZIP.
+
+-Descomprime el archivo ZIP en la ubicación deseada en tu máquina.
+
+-Configurar el entorno de desarrollo
+
+
+
+********************* Asegúrate de tener Visual Studio 2022 instalado en tu máquina *************************
+
+-Abre Visual Studio 2022.
+
+-Selecciona "File" en la barra de menú y luego "Open" > "Project/Solution".
+
+-Navega a la carpeta donde descomprimiste el código y selecciona el archivo de solución GestionEmpleados.
+
+-Compilar y ejecutar el programa
+
+Después de abrir el proyecto en Visual Studio 2022, asegúrate de que esté seleccionado como proyecto de inicio. Haz clic derecho sobre GestionEmpleados en el Explorador de Soluciones y elige "Set as StartUp Project" si no está seleccionado.
+
+Presiona F5 o selecciona "Debug" > "Start Debugging" en la barra de menú para compilar y ejecutar el programa.
+
+Uso del programa en Visual Studio 2022
+El programa te presentará un menú con las siguientes opciones:
+
+1.- Agregar Empleado
+2.- Agregar Gerente
+3.- Mostrar Empleados
+4.- Mostrar Gerentes
+5.- Salir
+Selecciona la opción deseada ingresando el número correspondiente y presiona Enter.
+
+Sigue las instrucciones en la consola para agregar empleados o gerentes, mostrar listas, o salir del programa.
+
+Después de cada acción, el programa te dará la opción de regresar al menú principal.
+
+Notas adicionales:
+
+El programa utiliza clases, interfaces y listas para gestionar empleados y gerentes.
+La entrada de datos está controlada para asegurar la introducción de valores válidos.
+¡Disfruta usando el Sistema de Gestión de Empleados! Si tienes alguna pregunta o mejora, no dudes en abrir un problema en el repositorio de GitHub.
